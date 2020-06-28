@@ -139,7 +139,7 @@ We received. As euro decreases, it shows in red color. We can also try if our co
 --image--
 Our mobile application works successfully.\
 
-## You can find all the working files in this repository and use freely.
+## You can find all the working files in this repository and use freely. Notice that The Microsoft Azure websites I use may be expired, but you can create your own resources for freely
 
 
 
