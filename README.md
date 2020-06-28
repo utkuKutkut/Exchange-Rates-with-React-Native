@@ -88,7 +88,9 @@ To clarify everything, this is how my Index.html file looks like.\
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/website.png)
 <br><br>
 There is also a ‘comment’ channel, which clients can push data to our server and it will be shown in ‘comments’ window.\
+<br>
 Now as we are done with this part, we can move to our client side coding.\
+**PLEASE NOTE THAT YOU NEED TO HAVE web.config FILE IN YOUR server FOLDER. THIS HANDLES REQUIRED CONFIGURATION. YOU CAN COPY PASTE THE ONE IN THIS REPOSITORY AND TAKE A DETAILED LOOK.** \
 <br><br>
 
 ## React Native
@@ -147,12 +149,13 @@ That is pretty much we could do. Now, let’s move to the fun part! We should te
 Now let’s modify our values from our Index.html web page\
 (https://exchange-rates.azurewebsites.net/) \
 <br>
-![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/mobil1.jpg)
-![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/mobil1.jpg)
-We received. As euro decreases, it shows in red color. We can also try if our comment will receive to server. Lets send a comment 'this app sucks'\
---image--
-Our mobile application works successfully.\
-
+![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/updateValues.png)
+<br><br>
+![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/mobil2.jpg)
+**We received. As euro decreases, it shows in red color. We can also try if our comment will receive to server. Lets send a comment 'this app sucks'** \
+![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/web3.png)
+**Our mobile application works successfully.** \
+<br>
 ### You can find all the working files in this repository and use freely. Notice that The Microsoft Azure websites I use may be expired, but you can create your own resources for freely
 
 
