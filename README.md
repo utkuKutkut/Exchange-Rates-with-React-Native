@@ -80,6 +80,7 @@ OldBitcoin channel -> send old BITCOIN RATE\
 The reason why I am taking both new and old both data is, I am checking both of the data and if there is increase in any rate, pushing this data to client IN BLUE color and if there is a decrease in any rate, I am showing them to client IN RED color.\
 To clarify everything, this is my Index.html file.\
 There is also a ‘yorum’ channel, which clients can push data to our server and it will be shown in ‘comments’ window.\
+**One additional note for server side, you need to have web.config file in your 'server' folder. You can use the same file in my repository and take a detailed look.\
 Now as we are done with this part, we can move to our client side coding.\
 
 ## React Native\
