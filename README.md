@@ -1,6 +1,6 @@
 # React-Native Mobile App Showing Current Exchange Rates
 
-## Server Side
+## Server Side\
 We are going to test the application with an online server and make it work for both client and server side. So I decided to use Microsoft Azure in order to have free online test environment.
 
 **Node.js**\
@@ -82,7 +82,7 @@ To clarify everything, this is my Index.html file.\
 There is also a ‘yorum’ channel, which clients can push data to our server and it will be shown in ‘comments’ window.\
 Now as we are done with this part, we can move to our client side coding.\
 
-**React Native**
+## React Native\
 React native is an open source mobile application framework created by Facebook. It enables many different useful features for developers, open source, free and supports both Android and IOs systems.\
 So I have used react native to develop my client side mobile application as my company requested. So it’s time to explain how did I accomplished this with steps.\
 First we need to create an empty react native project with command ‘react-native init {ProjectName}’.\
@@ -93,7 +93,7 @@ We can see our project is being created
 As we created the project, we can see our necessary react native components came in to our ClientSide folder.\
 
 Before we test if our react native project will work, first we need to have an emulator to test our mobile application. To do that, we will use Android Studio as I designed my project for Android.\
-**Android Studio**
+**Android Studio**\
 Android Studio, the official integrated development environment for Android. It is free and user-friendly. That’s why I decided to download android studio. However, I didn’t create emulator, instead, I connected my mobile phone and configured it with android studio to make it testable for my react-native project.\
 --image--
 Here my mobile device (Huawei fig-lx1) has been detected by android studio.\
@@ -102,14 +102,14 @@ Now as device is ready, we can test our device if it’s working or not by just 
 --image--
  A screenshot of my mobile device what occurred after the loading operation\
  
- **Client Side**
+ ## Client Side\
  As we successfully configured our mobile device with react native project, now, we can start coding our client.\
 Firstly, we need to install socket IO application’s client library as we need clients:\
 npm i socket.io-client\
 As I added to some table component to my application in order to make it looking good, you can add this library if you wish by this command: \
 npm install react-native-table-component\
 
-**App.js**
+**App.js**\
 Now let’s look at our App.js file in Client folder and modify it with our design. First, we import every component we need, such as Table, Row, Image, Textinput, TouchableOpacity etc …\
 After that, we initialize our default Dollar, Euro and Bit coin rates. I put symobolic values, you can change them; (Dolar:5.13, Euro:612, bitcoin:9000)\
 Then, we simply create a connection with our web server in order to get data\
@@ -126,7 +126,7 @@ the company) to have a beautiful design which is required. Then I put table and 
 end, I put ‘touchable area’ and text input area in order to get comments from user. Logic is, users can write comment easily
 in this area and then just touch to ‘send comment’ button and function will be triggered and comments will be received to our server via the channel.\
 --image--
-**Test**
+## Test\
 That is pretty much we could do. Now, let’s move to the fun part! We should test if our application is working or not!\
 --image--
 Initial page when we open the app for the first time.\
@@ -139,7 +139,7 @@ We received. As euro decreases, it shows in red color. We can also try if our co
 --image--
 Our mobile application works successfully.\
 
-## You can find all the working files in this repository and use freely. Notice that The Microsoft Azure websites I use may be expired, but you can create your own resources for freely
+### You can find all the working files in this repository and use freely. Notice that The Microsoft Azure websites I use may be expired, but you can create your own resources for freely
 
 
 
