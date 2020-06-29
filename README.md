@@ -56,9 +56,11 @@ Our web service useless right now, we need to add necessary codes to back-end. W
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/react6.png)
 <br><br>
 As I use KUDU for deployment my files to the server,I choose ZIP push deploy\
+<br><br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/react8.png)
 <br><br>
 From here, we can upload ZIP files with drag and drop OR we can simply add file one by one and edit the content of these files manually just by clicking the ‘pencil’ symbol.
+<br><br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/kudu.png)
 <br><br>
 So let’s start to code our back-end now. Firstly, let’s create a file name ‘Server’ to install all npm and necessary files. I use Visual Studio Code as it allows us to use powershell. So I use ‘NPM init’ command to create package.json file in our Server folder.\
@@ -107,7 +109,7 @@ Let’s say our project name is ‘ClientSide’. All react-native components wi
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/reactinit.png)
 **We can see our project is being created**\
 <br><br>
-As we created the project, we can see our necessary react native components came in to our ClientSide folder.\
+As we created the project, we can see our necessary react native components came in to our Client folder.\
 <br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/reactinit2.png)
 <br><br>
