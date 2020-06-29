@@ -12,7 +12,7 @@ node.js server.
 Npm is a package management system developed for the JavaScript. It
 mostly used with Node.js in order to improve it and NPMs enables new
 features in its packages.
-As I mentioned before, developing this mobile application, we need to
+Developing this mobile application, we need to
 create a online service in order to update ‘exchange rates’ that user
 have. First thing, as we will be communicating with our
 clients, we need to download and install all necessary ‘Node.js’ files.\
@@ -104,7 +104,7 @@ Now as we are done with this part, we can move to our client side coding.\
 
 ## React Native
 React native is an open source mobile application framework created by Facebook. It enables many different useful features for developers, open source, free and supports both Android and IOs systems.\
-So I have used react native to develop my client side mobile application as my company requested. So it’s time to explain how did I accomplished this with steps.\
+So I have used react native to develop my client side mobile application. So it’s time to explain how did I accomplished this with steps.\
 First we need to create an empty react native project with command ‘react-native init {ProjectName}’.\
 Let’s say our project name is ‘Client’. All react-native components will be installed in this folder.\
 <br>
@@ -138,7 +138,7 @@ npm install react-native-table-component\
 <br><br>
 **App.js**\
 Now let’s look at our App.js file in Client folder and modify it with our design. First, we import every component we need, such as Table, Row, Image, Textinput, TouchableOpacity etc …\
-After that, we initialize our default Dollar, Euro and Bit coin rates. I put symobolic values, you can change them; (Dolar:5.13, Euro:612, bitcoin:9000)\
+After that, we initialize our default Dollar, Euro and Bit coin rates. I put symbolic values, you can change them; (Dolar:5.13, Euro:612, bitcoin:9000)\
 Then, we simply create a connection with our web server in order to get data\
 <br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/apjs.png)
@@ -151,8 +151,7 @@ Then, we define channels to get which data from which. As we discussed before, e
 <br><br>
 Finally, we need to render our data and show it to users …\
 Before every return function, I put 4 very simple ‘IF’ statement to control if our data will be shown in ‘RED’ (decrease) or in ‘BLUE’ (increase). In order to do that, I simply compared ‘old’ values and ‘new’ values that we just received from the server. In my all tests, it worked fine.\
-In render functions, I put the same code except the colors. At the beginning of render, I put an image from a website (logo of
-the company) to have a beautiful design which is required. Then I put table and show exchange rates in these data tables. At the
+In render functions, I put the same code except the colors. At the beginning of render, I put an image from a website to have a beautiful design. Then I put table and show exchange rates in these data tables. At the
 end, I put ‘touchable area’ and text input area in order to get comments from user. Logic is, users can write comment easily
 in this area and then just touch to ‘send comment’ button and function will be triggered and comments will be received to our server via the channel.\
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/reactson.png)
