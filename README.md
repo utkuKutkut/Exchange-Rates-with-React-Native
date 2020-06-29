@@ -125,7 +125,7 @@ Android Studio, the official integrated development environment for Android. It 
 Now as device is ready, we can test our device if it’s working or not by just writing ‘react-native run-android’\
 <br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/runadnro%C4%B1d.png)
- **A screenshot of my mobile device what occurred after the loading operation ** \
+**A screenshot of my mobile device what occurred after the loading operation ** \
  <br><br>
  ## Client Side
 As we successfully configured our mobile device with react native project, now, we can start coding our client.\
@@ -143,7 +143,7 @@ Then, we simply create a connection with our web server in order to get data\
 <br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/apjs.png)
 **Here we see our connection with socket IO server** \
-<<br>
+<br>
 Then, we define channels to get which data from which. As we discussed before, each exchange rate has its own channel to get data. We also have ‘comment’ channel to send comments to our server web page.\
 <br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/re16.png)
