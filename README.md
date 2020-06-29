@@ -69,12 +69,14 @@ So let’s start to code our back-end now. Firstly, let’s create a file name �
 <br><br>
 We also need express library in our project. So let’s work ‘npm install express –-save’ command in our powershell\
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/express.png)
-<br<br>>We also need to install socket.io in our Node.js project.
+<br><br>
+We also need to install socket.io in our Node.js project.\
+<br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/socket.io.png)
 <br><br>
 After we done with all our packages, we can now start coding!\
 In my socket server, I have created express and socket IO library configurations, with creating variables express, app, server and io.\
-After that I have redirect requests from the home directory to index.html. So let’s see what is going on that index.html\ 
+After that I have redirect requests from the home directory to index.html. So let’s see what is going on that index.html \
 <br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/indexhtml.png)
 <br><br>
@@ -104,7 +106,7 @@ Now as we are done with this part, we can move to our client side coding.\
 React native is an open source mobile application framework created by Facebook. It enables many different useful features for developers, open source, free and supports both Android and IOs systems.\
 So I have used react native to develop my client side mobile application as my company requested. So it’s time to explain how did I accomplished this with steps.\
 First we need to create an empty react native project with command ‘react-native init {ProjectName}’.\
-Let’s say our project name is ‘ClientSide’. All react-native components will be installed in this folder.\
+Let’s say our project name is ‘Client’. All react-native components will be installed in this folder.\
 <br>
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/reactinit.png)
 **We can see our project is being created**\
