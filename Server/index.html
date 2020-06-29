@@ -1,0 +1,97 @@
+<button id="btn">Update Dolar</button>
+<input onkeypress='validate(event)' type="text" id="myText"></input>   
+<br><br><br>
+
+
+
+<button id="btn2">Update Euro</button>
+<input type="text" onkeypress='validate(event)' id="myText2"></input>  
+<br><br><br>
+
+
+<button id="btn3">Update BitCoin</button>
+<input type="text" onkeypress='validate(event)' id="myText3"></input>   
+<br><br><br><br><br>
+<b >All Comments</b>
+<br><br>
+
+<textarea id="comment" name="comment" rows="10" cols="50"></textarea>
+
+<br><br><br>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+
+
+
+ var socket = io();
+ var button = document.getElementById("btn");
+ var input = document.getElementById("myText");
+ var button2 = document.getElementById("btn2");
+ var input2 = document.getElementById("myText2");
+ var button3 = document.getElementById("btn3");
+ var input3 = document.getElementById("myText3");
+ 
+ 
+ //response, data coming from comment channel !!!
+ 
+  socket.on('comment', function (response) {
+   
+    document.getElementById("comment").value+=response.data+"\n"
+    
+  });
+ 
+  
+function validate(evt) {
+  var theEvent = evt || window.event;
+
+  // Handle paste
+  if (theEvent.type === 'paste') {
+      key = event.clipboardData.getData('text/plain');
+  } else {
+  // Handle key press
+      var key = theEvent.keyCode || theEvent.which;
+      key = String.fromCharCode(key);
+  }
+  var regex = /[0-9]|\./;
+  if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}
+
+ button.onclick = function(){
+    
+       var iNum = parseFloat(input.value);
+       var oldNum = parseFloat(document.getElementById('myText').value);
+       
+         socket.emit('updateDolar', { dolarRate: iNum});
+       
+         socket.emit('OldDolar', { oldDolar:oldNum });
+         document.getElementById('myText').value = iNum;
+      
+
+ }
+ 
+ 
+ button2.onclick = function(){
+ var iNum2 = parseFloat(input2.value);
+  var oldNum2 = parseFloat(document.getElementById('myText2').value);
+  socket.emit('updateEuro', { euroRate: iNum2});
+  socket.emit('OldEuro', { oldEuro: oldNum2 });
+  document.getElementById('myText2').value = iNum2;
+
+ }
+  button3.onclick = function(){
+ var iNum3 = parseFloat(input3.value);
+  var oldNum3 = parseFloat(document.getElementById('myText3').value);
+  socket.emit('updateBitcoin', { bitcoinRate: iNum3});
+  socket.emit('OldBitcoin', { oldbitcoin:oldNum3});
+  document.getElementById('myText3').value = iNum3;
+
+ }
+ 
+ 
+ 
+</script>
