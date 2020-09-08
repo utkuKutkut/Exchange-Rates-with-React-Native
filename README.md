@@ -174,7 +174,7 @@ Now let’s modify our values from our Index.html web page\
 ![](https://github.com/utkuKutkut/Exchange-Rates-with-React-Native/blob/master/Images/web3.png)
 **Our mobile application works successfully.** \
 <br><br>
-### You can find all the working files in this repository and use freely. Notice that The Microsoft Azure websites I use may be expired, but you can create your own resources for freely
+### You can find all the working files in this repository. Notice that The Microsoft Azure websites I use may be expired, but you can create your own resources for freely
 
 
 
